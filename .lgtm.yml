@@ -1,0 +1,8 @@
+extraction:
+    cpp:
+        prepare:
+            packages:
+                - gdc # will install gcc-8 and g++-8
+        configure:
+            command: 
+                - ./configure --cxx=/usr/bin/g++-8 --cc=/usr/bin/gcc-8 --disable-docs --disable-guest-agent-msi --disable-debug-info --target-list=x86_64-linux-user
